@@ -9,16 +9,14 @@
     <link rel="stylesheet" href="@Assets["bootstrap/bootstrap.min.css"]"/>
     <link rel="stylesheet" href="@Assets["app.css"]"/>
     <link href="HtmxMinimalApi.styles.css" rel="stylesheet">
-    <script src="https://unpkg.com/htmx.org@2.0.0"></script>
     <script src="@Assets["client-error-handling.js"]"></script>
     <script src="@Assets["remove-cached-history.js"]"></script>
     <HeadOutlet/>
 </head>
-<body hx-boost="true">
+<body>
 <div class="page">
     <main>
         <article class="content px-4">
-            <div hx-trigger="success-alert from:body" hx-get="/success-alert"></div>
             @Body
         </article>
     </main>
